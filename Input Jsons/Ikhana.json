@@ -1,0 +1,96 @@
+{
+    "CG" : [0.0, 0.0, 0.0],
+    "weight" : 31593.16386,
+    "reference" : {
+    	"longitudinal_length": 1.2192,
+        "area" : 23.7832
+    },
+    "controls" : {
+        "flaps1" : {
+            "is_symmetric" : true
+        },
+        "elevator" : {
+            "is_symmetric" : true
+        }
+    },
+    "airfoils" : {
+	    "Ikhana_NACA_0010_main": {
+		    "type": "linear",
+    	    "aL0": 0.0,
+    	    "CLa": 6.43365,
+    	    "CmLo": 0.0,
+    	    "Cma": 0.0,
+    	    "CD0": 0.00513,
+    	    "CD1": 0.0,
+    	    "CD2": 0.00984,
+		    "geometry" : {
+			    "outline_points" : "AirfoilDatabase/airfoils/uCRM-9_wr0_xfoil.txt"
+			    }
+	    },
+	    "Ikhana_NACA_0010" : {
+    	    "type": "linear",
+    	    "aL0": 0.0,
+    	    "CLa": 6.43365,
+    	    "CmLo": 0.0,
+    	    "Cma": 0.0,
+    	    "CD0": 0.00513,
+    	    "CD1": 0.0,
+    	    "CD2": 0.00984
+	    }
+    },
+    "wings" : {
+        "main_wing" : {
+            "ID" : 1,
+            "side" : "both",
+            "is_main" : true,
+            "semispan" : 9.7536,
+            "sweep" : 0.0,
+            "dihedral" : 0.0,
+            "chord" : [[0.0, 1.70688],
+                        [1.0, 0.73152]],
+	    	"airfoil" : "Ikhana_NACA_0010_main",
+	    	"control_surface" : {
+    	    	"chord_fraction" : 0.6,
+    	    	"control_mixing" : {
+            	    	"flaps1" : 1.0
+    	    	}
+	    	},
+            "grid" : {
+                "N" : 100,
+                "flap_edge_cluster" : true,
+                "reid_corrections" : true,
+                "xwing_ID" : 0
+            }
+        },
+        "horizontal_tail" : {
+            "ID" : 2,
+            "side" : "both",
+            "is_main" : false,
+            "connect_to" : {
+                "dx" : -3.068,
+                "dz" : 0.0
+            },
+            "semispan" : 3.68808,
+            "sweep" : 0.0,
+            "dihedral" : 29.0,
+            "chord" : [[0.0, 1.335024],
+                        [1.0, 0.758952]],
+            "twist" : [[0.0, 0.0],
+                        [1.0, 0.0]],
+            "airfoil" : "Ikhana_NACA_0010",
+            "control_surface" : {
+                "chord_fraction" : 0.27,
+                "control_mixing" : {
+                    "elevator" : 1.0
+                }
+            },
+            "grid" : {
+                "N" : 50,
+                "flap_edge_cluster" : true,
+                "reid_corrections" : true,
+                "blending_distance" : 0.25,
+                "xwing_ID" : 1
+            }
+        }
+    }
+}

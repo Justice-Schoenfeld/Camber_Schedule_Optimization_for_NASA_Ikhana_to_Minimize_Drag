@@ -1,0 +1,28 @@
+{
+    "tag" : "Ikhana",
+    "solver" : {
+        "type" : "nonlinear",
+	"convergence" : 1e-6,
+	"relaxation" : 0.9,
+	"max_iterations" : 1000
+    },
+    "units" : "SI",
+    "scene" : {
+        "atmosphere" : {
+            "altitude_m" : 6096,
+            "rho" : "standard",
+    		"xrho" : 0.6531184658029734
+    	},
+        "aircraft" : {
+            "Ikhana" : {
+                "file" : "Ikhana_rectangular.json",
+                "state" : {
+            		    "position": [0.0, 0.0, -6069.0],
+                    "velocity" : 102.889,
+                    "alpha" : 0.0,
+                    "beta" : 0.0
+                }
+            }
+        }
+    }
+}
