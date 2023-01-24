@@ -6,4 +6,4 @@ The Input Files folder contains all the MachUpX required inputs. MachUpX require
 
 The Code folder contains all the python code necessary to conduct and run the optimization. Inside are two sub folders, Optimization Code and Run Code. Optimization Code contains the python code required to perform the actual optimization. Run Code is what the user interfaces with in order to determine the number of control points, the desired lift coefficient, and to specify the MachUpX input files. Inside of the Run Code folder there is an example of running the optimization at a single lift coefficient, over a range of lift coefficients with an initial guess of all zeros, and over a range of lift coefficients with an initial guess based off of the solution for the last lift coefficient.
 
-For a more detailed explanation and a walk through example of how the code interfaces and results obtained with this code see the authors thesis, https://digitalcommons.usu.edu/etd/8662/.
+For a more detailed explanation and to see results obtained with this code for the NASA Ikhana see the authors thesis, https://digitalcommons.usu.edu/etd/8662/.
